@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft transition-smooth",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -18,6 +18,12 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        
+        // Mandai-specific variants
+        wild: "bg-gradient-jungle text-primary-foreground hover:shadow-nature transition-smooth transform hover:scale-105",
+        sunrise: "bg-gradient-sunset text-primary-foreground hover:shadow-glow transition-bounce font-semibold",
+        adventure: "bg-accent text-accent-foreground hover:bg-accent/90 shadow-soft hover:shadow-nature transition-smooth font-medium",
+        hero: "bg-transparent border-2 border-background text-background hover:bg-background hover:text-primary transition-smooth backdrop-blur-sm font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
